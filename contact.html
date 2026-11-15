@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Visit | My Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="brand-logo">
+            My Cafe <span class="badge">Est. Lab 11</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle Navigation">
+            Menu &#9776;
+        </button>
+        <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="coffee.html">Coffee Guide</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+
+<div class="page-banner">
+    <h1>Contact &amp; Visit Information</h1>
+    <p>Have questions about our menu, study zones, or sample workshops? Send us a message or review our visit placeholders below.</p>
+</div>
+
+<div class="illustrative-note">
+    <strong>Placeholder Information Notice:</strong> Per project guidelines, no real street addresses, phone numbers, or commercial emails are invented. All location and contact entries below are clearly marked placeholders.
+</div>
+
+<div class="grid-2">
+    <div class="form-card">
+        <h2>Send a Message</h2>
+        <form id="contactForm" novalidate>
+            <div class="form-group">
+                <label for="contactName">Your Name *</label>
+                <input type="text" id="contactName" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="contactEmail">Your Email *</label>
+                <input type="email" id="contactEmail" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="contactSubject">Subject</label>
+                <select id="contactSubject">
+                    <option value="general">General Enquiry</option>
+                    <option value="menu">Menu &amp; Allergen Question</option>
+                    <option value="events">Sample Workshop Enquiry</option>
+                    <option value="feedback">Website Feedback</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="contactMessage">Message *</label>
+                <textarea id="contactMessage" rows="4" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="form-result" id="contactResult" role="status" aria-live="polite"></div>
+    </div>
+
+    <div>
+        <div class="card" style="margin-bottom:1.5rem;">
+            <h3>Visit &amp; Placeholder Contact Details</h3>
+            <p><strong>Location:</strong> [Campus / Neighborhood Street Address Placeholder]</p>
+            <p><strong>Phone:</strong> [Cafe Telephone Placeholder]</p>
+            <p><strong>Email:</strong> [hello@mycafe-placeholder.example]</p>
+            <p><strong>Project Developer:</strong> Anas Shahid (Roll No. 26i-3113, Section E)</p>
+        </div>
+
+        <div class="card">
+            <h3>Opening Hours (Placeholders)</h3>
+            <div class="table-wrap" style="margin:0.5rem 0 0;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Illustrative Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday &ndash; Thursday</td>
+                            <td>08:00 AM &ndash; 10:00 PM (Placeholder)</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>08:00 AM &ndash; 11:00 PM (Placeholder)</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday &ndash; Sunday</td>
+                            <td>09:00 AM &ndash; 11:00 PM (Placeholder)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <h3>My Cafe</h3>
+                <p>Warm hospitality, freshly brewed coffee, and soothing teas. Extended from Lab 11 into a full 10-page web experience for Lab 12.</p>
+                <button onclick="triggerOrderAlert()">Order Now</button>
+            </div>
+            <div>
+                <h3>Explore Pages</h3>
+                <ul>
+                    <li><a href="index.html">Home</a> | <a href="menu.html">Full Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a> | <a href="about.html">About Us</a></li>
+                    <li><a href="coffee.html">Coffee Guide</a> | <a href="experience.html">Experience</a></li>
+                    <li><a href="events.html">Events</a> | <a href="reservation.html">Reservations</a></li>
+                    <li><a href="contact.html">Contact</a> | <a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Academic Project Info</h3>
+                <ul>
+                    <li><strong>Student:</strong> Anas Shahid</li>
+                    <li><strong>Roll No:</strong> 26i-3113 | <strong>Section:</strong> E</li>
+                    <li><strong>Course:</strong> Lab 12 — Git, GitHub, Vibe Coding &amp; Deployment</li>
+                    <li><em>Note: Sample prices, events, and placeholders are illustrative.</em></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 My Cafe — Built by Anas Shahid (26i-3113, Section E). Deployed via GitHub Pages.
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

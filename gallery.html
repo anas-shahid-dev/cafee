@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery | My Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="brand-logo">
+            My Cafe <span class="badge">Est. Lab 11</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle Navigation">
+            Menu &#9776;
+        </button>
+        <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="coffee.html">Coffee Guide</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+
+<div class="page-banner">
+    <h1>My Cafe Visual Gallery</h1>
+    <p>Click any photograph below to inspect our signature beverages, brewing craft, and cozy cafe atmosphere in the interactive lightbox.</p>
+</div>
+
+<div class="illustrative-note">
+    <strong>Gallery Note:</strong> Featuring our original Lab 11 Cappuccino photograph alongside curated high-resolution cafe imagery illustrating our beverage and seating experience.
+</div>
+
+<div class="grid-3">
+    <article class="gallery-item" tabindex="0">
+        <img src="https://www.allrecipes.com/thmb/chsZz0jqIHWYz39ViZR-9k_BkkE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/8624835-how-to-make-a-cappuccino-beauty-4x3-0301-13d55eaad60b42058f24369c292d4ccb.jpg" alt="Signature Lab 11 Cappuccino with microfoam">
+        <div class="gallery-caption">
+            <h4>Signature Cappuccino (Original Lab 11)</h4>
+            <p>Our iconic creamy cappuccino (Rs. 350) featuring dense microfoam and balanced espresso.</p>
+        </div>
+    </article>
+
+    <article class="gallery-item" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=800&q=80" alt="Freshly extracted Espresso shot">
+        <div class="gallery-caption">
+            <h4>Single-Origin Espresso Shot</h4>
+            <p>Extracted at 9 bars of pressure for a rich hazelnut crema (Rs. 250).</p>
+        </div>
+    </article>
+
+    <article class="gallery-item" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?auto=format&fit=crop&w=800&q=80" alt="Traditional warm Milk Tea and Green Tea">
+        <div class="gallery-caption">
+            <h4>Artisan Tea Service</h4>
+            <p>Steaming Milk Tea (Rs. 150), Green Tea (Rs. 180), and Black Tea (Rs. 120) brewed fresh.</p>
+        </div>
+    </article>
+
+    <article class="gallery-item" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Pouring steamed milk into a Latte">
+        <div class="gallery-caption">
+            <h4>Velvety Cafe Latte Art</h4>
+            <p>Silky steamed milk poured over fresh espresso for our smooth Latte (Rs. 300).</p>
+        </div>
+    </article>
+
+    <article class="gallery-item" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80" alt="Golden baked croissants on wooden tray">
+        <div class="gallery-caption">
+            <h4>Morning Bakery Selection</h4>
+            <p>Flaky butter croissants and warm pastries baked to pair with morning coffee.</p>
+        </div>
+    </article>
+
+    <article class="gallery-item" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Warm wooden interior seating at a neighborhood cafe">
+        <div class="gallery-caption">
+            <h4>Warm Study &amp; Lounge Corner</h4>
+            <p>Natural wood tables, soft lighting, and peaceful seating inspired by our beige and earthy palette.</p>
+        </div>
+    </article>
+</div>
+
+<div class="lightbox" id="galleryLightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+    <div class="lightbox-content">
+        <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">Close &times;</button>
+        <img id="lightboxImg" src="" alt="">
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxDesc"></p>
+    </div>
+</div>
+
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <h3>My Cafe</h3>
+                <p>Warm hospitality, freshly brewed coffee, and soothing teas. Extended from Lab 11 into a full 10-page web experience for Lab 12.</p>
+                <button onclick="triggerOrderAlert()">Order Now</button>
+            </div>
+            <div>
+                <h3>Explore Pages</h3>
+                <ul>
+                    <li><a href="index.html">Home</a> | <a href="menu.html">Full Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a> | <a href="about.html">About Us</a></li>
+                    <li><a href="coffee.html">Coffee Guide</a> | <a href="experience.html">Experience</a></li>
+                    <li><a href="events.html">Events</a> | <a href="reservation.html">Reservations</a></li>
+                    <li><a href="contact.html">Contact</a> | <a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Academic Project Info</h3>
+                <ul>
+                    <li><strong>Student:</strong> Anas Shahid</li>
+                    <li><strong>Roll No:</strong> 26i-3113 | <strong>Section:</strong> E</li>
+                    <li><strong>Course:</strong> Lab 12 — Git, GitHub, Vibe Coding &amp; Deployment</li>
+                    <li><em>Note: Sample prices, events, and placeholders are illustrative.</em></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 My Cafe — Built by Anas Shahid (26i-3113, Section E). Deployed via GitHub Pages.
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

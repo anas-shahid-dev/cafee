@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Experience | My Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="brand-logo">
+            My Cafe <span class="badge">Est. Lab 11</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle Navigation">
+            Menu &#9776;
+        </button>
+        <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="coffee.html">Coffee Guide</a></li>
+                <li><a href="experience.html" class="active">Experience</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+
+<div class="page-banner">
+    <h1>The My Cafe Experience</h1>
+    <p>Designed for unhurried mornings, focused study blocks, and warm conversations.</p>
+</div>
+
+<section class="section grid-3">
+    <div class="card">
+        <span class="card-badge">Ambience</span>
+        <h3>Warm Beige &amp; Earthy Palette</h3>
+        <p>Inspired directly by our signature beige (<code>#F5F5DC</code>), rich wood brown, and botanical green accents, our interior reduces visual fatigue and fosters calm focus.</p>
+    </div>
+    <div class="card">
+        <span class="card-badge">Work &amp; Study</span>
+        <h3>Student-Friendly Seating</h3>
+        <p>Spacious wooden tables, accessible power outlets along booth walls, and balanced acoustic zoning separate quiet study corners from lively social tables.</p>
+    </div>
+    <div class="card">
+        <span class="card-badge">Hospitality</span>
+        <h3>Thoughtful Table Service</h3>
+        <p>Whether you order a single Rs. 120 Black Tea or spend an afternoon drafting code, our staff respects your pace without rushing your table.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-header">
+        <h2>Seating Zones &amp; Atmosphere Guide</h2>
+    </div>
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>Zone Name</th>
+                    <th>Seating Style</th>
+                    <th>Best Suited For</th>
+                    <th>Noise Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>The Study Alcove</strong></td>
+                    <td>Individual &amp; 2-person desks with wall outlets</td>
+                    <td>Laptop work, coding labs, reading, exam prep</td>
+                    <td>Quiet / Low</td>
+                </tr>
+                <tr>
+                    <td><strong>Window Counter Bar</strong></td>
+                    <td>High wooden stools overlooking natural daylight</td>
+                    <td>Quick Espresso breaks, journaling, solo coffee</td>
+                    <td>Moderate</td>
+                </tr>
+                <tr>
+                    <td><strong>The Garden Lounge</strong></td>
+                    <td>Cushioned armchairs &amp; round timber tables</td>
+                    <td>Small group discussions, tea catch-ups, book clubs</td>
+                    <td>Conversational</td>
+                </tr>
+                <tr>
+                    <td><strong>Community Tasting Table</strong></td>
+                    <td>Large 8-seat communal oak table</td>
+                    <td>Workshops, group study sessions, tasting flights</td>
+                    <td>Lively / Social</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="section card" style="text-align:center;">
+    <h2>Plan Your Next Study Session or Coffee Break</h2>
+    <p>Reserve a quiet desk or group table in advance using our online reservation enquiry form.</p>
+    <a href="reservation.html" class="btn btn-green">Reserve Your Spot</a>
+</section>
+
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <h3>My Cafe</h3>
+                <p>Warm hospitality, freshly brewed coffee, and soothing teas. Extended from Lab 11 into a full 10-page web experience for Lab 12.</p>
+                <button onclick="triggerOrderAlert()">Order Now</button>
+            </div>
+            <div>
+                <h3>Explore Pages</h3>
+                <ul>
+                    <li><a href="index.html">Home</a> | <a href="menu.html">Full Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a> | <a href="about.html">About Us</a></li>
+                    <li><a href="coffee.html">Coffee Guide</a> | <a href="experience.html">Experience</a></li>
+                    <li><a href="events.html">Events</a> | <a href="reservation.html">Reservations</a></li>
+                    <li><a href="contact.html">Contact</a> | <a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Academic Project Info</h3>
+                <ul>
+                    <li><strong>Student:</strong> Anas Shahid</li>
+                    <li><strong>Roll No:</strong> 26i-3113 | <strong>Section:</strong> E</li>
+                    <li><strong>Course:</strong> Lab 12 — Git, GitHub, Vibe Coding &amp; Deployment</li>
+                    <li><em>Note: Sample prices, events, and placeholders are illustrative.</em></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 My Cafe — Built by Anas Shahid (26i-3113, Section E). Deployed via GitHub Pages.
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
